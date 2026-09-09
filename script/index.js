@@ -284,7 +284,7 @@ function createProductCard(product) {
 /* CARREGAR PRODUTOS */
 async function loadProducts() {
     try {
-        const response = await fetch("./products.json");
+        const response = await fetch("./data/products.json");
         if (!response.ok) throw new Error(`Erro HTTP: ${response.status}`);
         
         const products = await response.json();
@@ -308,6 +308,9 @@ async function loadProducts() {
         productsGrid.innerHTML = `
             <div class="products-loading">
                 <p>❌ Não foi possível carregar os produtos.</p>
+                <p style="color: #ff6b6b; font-size: 14px; margin-top: 10px; word-break: break-all;">
+                    <strong>Detalhes do erro:</strong><br>${error.message}
+                </p>
             </div>
         `;
     }

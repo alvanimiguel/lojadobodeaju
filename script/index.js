@@ -284,7 +284,7 @@ function createProductCard(product) {
 /* CARREGAR PRODUTOS */
 async function loadProducts() {
     try {
-        const response = await fetch("products.json");
+        const response = await fetch("./products.json");
         if (!response.ok) throw new Error(`Erro HTTP: ${response.status}`);
         
         const products = await response.json();

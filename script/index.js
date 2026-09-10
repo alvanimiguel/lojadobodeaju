@@ -79,7 +79,7 @@ function createWhatsAppLink(product) {
         message += `*R$ ${formatPrice(product.preco)}*\n\n`;
     }
     
-    message += `#VimPeloGitHubPages`;
+    message += `#GitHubPages`;
     
     const encodedMessage = encodeURIComponent(message);
     return `https://wa.me/${WHATSAPP_NUMBER}?text=${encodedMessage}`;

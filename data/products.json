@@ -7,7 +7,7 @@
         "descricao": "Anel Maçonaria em aço de alta qualidade.\nCores: Prata e Dourado\nMaterial: Aço inox\nTamanhos: 20",
         "imagens": [
             "/data/products/produto-1/anel-dourado.png",
-            "products/produto-1/anel-prateado.png"
+            "products/produto-1/anel-prateado.png",
             "/products/produto-1/anel-prateado.png",
             "./products/produto-1/anel-prateado.png",
             "/data/products/produto-1/anel-prateado.png"

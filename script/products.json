@@ -6,8 +6,8 @@
         "preco_promocional": 39.90,
         "descricao": "Anel Maçonaria em aço de alta qualidade.\nCores: Prata e Dourado\nMaterial: Aço inox\nTamanhos: 20",
         "imagens": [
-            "./data/products/produto-1/anel-dourado.png",
-            "./data/products/produto-1/anel-prateado.png"
+            "/data/products/produto-1/anel-dourado.png",
+            "/data/products/produto-1/anel-prateado.png"
         ],
         "imagem_ia": true,
         "selo_ia": "Imagem ilustrativa.",

@@ -70,21 +70,16 @@ function formatDescription(text) {
 
 /* LINK WHATSAPP */
 function createWhatsAppLink(product) {
-    let message = `Olá! 👋\n\nTenho interesse no seguinte produto:\n\n`;
-    message += `🛍️ *Produto:* ${product.nome}\n`;
+    let message = `Olá! Tenho interesse no *${product.nome}*.\n\n`;
     
     if (product.preco_promocional && product.preco_promocional < product.preco) {
-        message += `💰 *Preço Promocional:* ${formatPrice(product.preco_promocional)}\n`;
-        message += `💵 *Preço Original:* ${formatPrice(product.preco)} (R$ ${(product.preco - product.preco_promocional).toFixed(2)} de desconto!)\n`;
+        message += `~R$ ${formatPrice(product.preco)}~ por *R$ ${formatPrice(product.preco_promocional)}*.\n`;
+        message += `*R$ ${(product.preco - product.preco_promocional).toFixed(2)} de desconto!*\n\n`;
     } else {
-        message += `💰 *Preço:* ${formatPrice(product.preco)}\n`;
+        message += `*R$ ${formatPrice(product.preco)}*\n\n`;
     }
     
-    if (product.descricao) {
-        message += `\n📝 *Descrição:* ${product.descricao}\n`;
-    }
-    
-    message += `\nGostaria de saber mais informações e disponibilidade.`;
+    message += `#VimPeloGitHubPages`;
     
     const encodedMessage = encodeURIComponent(message);
     return `https://wa.me/${WHATSAPP_NUMBER}?text=${encodedMessage}`;

@@ -106,7 +106,7 @@ function createGallery(images) {
         img.decoding = "async";
         
         img.onerror = () => {
-            img.src = "https://via.placeholder.com/800x800?text=Imagem+indisponível";
+            img.src = "https://placehold.co/800x800?text=Imagem+indispon%C3%ADvel";
         };
         
         slide.appendChild(img);

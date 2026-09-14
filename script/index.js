@@ -1,4 +1,4 @@
-const WHATSAPP_NUMBER = "5579988653380";
+const WHATSAPP_NUMBER = "5579991134886";
 
 const productsGrid = document.getElementById("products-container");
 const themeToggle = document.getElementById("theme-toggle");
